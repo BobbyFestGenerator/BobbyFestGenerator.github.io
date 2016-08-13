@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+<br>
+
+	<title>The X-Files Episode Generator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	
+</head>
+
+<img src="x.jpg" align="left">
+
+<body>
+
+ <div class="marquee">
+ 	
+	<h3>THE X-FILES EPISODE GENERATOR</h3>
+
+	<br>
+	<hr width="50%">
+	<br>
+
+	<p>Make your own episode!</p>
+
+	<p>The X-Files generator mixes people, places and plots from different episodes to create new adventures.</p>
+
+
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <hr width="50%>">
+ <br>
+ <br>
+ 
+
+
+	<div class="wrap">
+		<button onclick="sentenceLoad()">Generate</button>
+	</div> 
+
+
+
+	<div class="container">
+	
+		<h5></h5>
+	
+	</div>
+	
+<script> function sentenceLoad() {
+	
+		//declare arrays
+		var nouns = ['Mulder, Scully, and']; 
+		var names = ['Assistant Director Skinner', 'the Cigarette Smoking Man', 'Alex Krycek'];
+		var actions = ['are running from alien bounty hunters', 'are tracking a shapeshifter', 'are hunting a mutant serial killer'];   
+		var places = ['in the woods of New Jersey', 'in a government bunker', 'in Olympic National Forest'];       
+		//shuffle through contents of each array, picking one entry per array
+		var randNoun = nouns[Math.floor(Math.random() * nouns.length)];
+		var randName = names[Math.floor(Math.random() * names.length)];
+		var randAction = actions[Math.floor(Math.random() * actions.length)];
+		var randPlace = places[Math.floor(Math.random() * places.length)];
+		//place the random entry into the appropriate place in the HTML
+		jQuery("h5").html("");
+		jQuery("h5").append(randNoun + "&nbsp;");
+		jQuery("h5").append(randName + "&nbsp;");
+		jQuery("h5").append(randAction + "&nbsp;");
+		jQuery("h5").append(randPlace);
+	}
+</script>
+	
+
+</div>
+
+</body>
+
+</html>
