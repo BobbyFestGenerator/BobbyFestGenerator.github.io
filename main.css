@@ -1,29 +1,46 @@
 body {
     background-color: white;
-    margin: 25px;
 }
 
-img {
-	float: left;
-	padding-right: 20px;
-	position: static;
-}
 
 h3 {
 	font-family: "Courier New", Courier, monospace;
 	text-align: left;
-	position: static;
 }
 
-p {
+.star {
+	float: right;
+	position: relative;
+    right: 250px;
+}
+
+.sketches {
+	width: 550px;
+  	margin: 20px auto;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.graf {
 	font-family: "Courier New", Courier, monospace;
-	font-size: 13.5px;
+	font-size: 11px;
 	text-align: left;
+	margin-right: 400px;
+	margin-left: 400px;
+}
+
+.final {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9px;
+	text-align: center;
 }
 
 h5 {
 	font-family: "Courier New", Courier, monospace;
 }
+
 
 .wrap {
 	text-align: center;
