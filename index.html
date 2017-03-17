@@ -1,72 +1,90 @@
 <html>
 
-<head>
+	<head>
+		<title>The BobbyFest Mishap Generator</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>	
+	</head>
 
-<br>
+	<body>
 
-	<title>The BobbyFest Mishap Generator</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-	
-</head>
+ 
+ 		<div class="marquee">
+ 	 		<br>
+ 	 		<h3><center>THE BOBBYFEST MISHAP GENERATOR v2.0</center></h3>
+ 		</div>
 
-<body>
+ 		<div class="star">
+ 			<a href="https://forums.anandtech.com/threads/manually-removing-a-virus.1348254/"><img src="SB1.png"></a>
+ 		</div>
 
- <img src="Bob.jpg" height="35%" width="14%">
+ 		<br>
 
- <div class="marquee">
- 	
-	 <h3>THE BOBBYFEST MISHAP GENERATOR</h3>
+ 		<div class="sketches">
+ 	 		<img src="Bob1.jpg" border="1px">
+ 	 		</a><img src="Label.jpg" border="1px">
+ 	 		<img src="X.jpg" border="1px">
+ 		</div>
 
-	 
-	 <p>Ghastly news!</p>
+ 		<br>
 
-	 <p>The date was set, the transportation arranged. The cat5 cables had even been rationed out. But something went terribly wrong.</p>
+ 		<div class="graf">
+	 		<p>Ghastly news!</p>
 
-	 <p>BobbyFest will have one fewer participant this season -- a hapless friend had a run of bad luck. Who is he? And what precisely happened?</p>
- </div>
+	 		<p>The date was set, the transportation arranged. The cat5 cables had even been rationed out. But something went terribly wrong.</p>
 
- <br>
- <br>
- <br>
+			 <p>BobbyFest will have one fewer participant this season -- a hapless friend had a run of bad luck. Who is he? And what precisely happened?</p>
+ 		</div>
  
 
+		<br>
+ 
 
-	<div class="wrap">
-		<button onclick="sentenceLoad()">Find out</button>
-	</div> 
+		<div class="wrap">
+			<button onclick="sentenceLoad()">Find out</button>
+		</div> 
 
 
 
-	<div class="container">
-		<h5></h5>
-	</div>
+		<div class="container">
+			<h5></h5>
+		</div>
+
+
+		<script> function sentenceLoad() {
 	
- <script> function sentenceLoad() {
-	
-		//declare arrays
-		var nouns = ['Bob', 'Dock', 'JJ', 'Label', 'Mambo', 'Vec', 'X']; 
-		var clauses = ['can\'t attend BobbyFest because he and'];
-		var names = ['Mr. DeCurtis', 
-		'Stephan Guisti', 
-		'Kyle Jasper', 'Josh Gordon', 'Mr. Melito', 'Andy Rooks', 'Nema', 'Richie Lesser', 'Kyle Corbitt', 'Atif', 'Mr. Rooks', 'Cousin Michael', 'Beau Snarr', 'Greg Ozello', 'Jen Axelrod', 'Hannah Berkman', 'Tomomi Sakai', 'Phil Epstein', 'a rapidly deteriorating clone of Bill Smith', 'a hologram of Matt Spaiser', 'David Murdock', 'the severed head of Mr. Courtney', 'the original four members of Ject', 'Lloyd Slackman', 'the Colby baseball team', 'Baron Sengir', 'the Siebert brothers', 'Brian Goldstein', 'Chip Wagner', 'Chunga', 'Craig Praeger', 'Cousin Drew', 'Dan Marcel', 'Dr. Saar', 'Drew Beebee', 'Gena Serati', 'Genc', 'Graveyard Mike', 'the ex-drummer of Blackest', 'Harry Effron', 'Henrik', 'Howie Schulsky', 'Jess Morse', 'John Sillings', 'Karthik', 'Jopling', 'Jomo', 'Logan Mallet', 'Mark Sergenian', 'Matt Goldman', 'Mike Zeola', 'Nate Dogg', 'Officer Tartaglione', 'Dave Ranno', 'Ms. Cotnoir', 'Brendan Reilly', 'Dean Murdock', 'Elsie Smith', 'an actor playing Jeff Chou', 'a troupe of merry bards', 'Kimbo', 'a horribly-burned Mario Marotta', 'a despondent Mike Waxenberg', 'the malevolent spirit of King Yagello VII',];   
-		var scandals = ['summoned an ancient Babylonian demon', 'murdered an immigrant', 'made a blood pact with Baal', 'reanimated a corpse', 'got drunk on rubbing alcohol', 'contracted dysentary', 'angered a mob of Egyptian immigrants', 'slowly suffocated', 'are opening a PF Changs franchise', 'are doing D2 speed runs', 'are mercy killing a camel', 'are selling Bonobos pants', 'are vomitting shit and shitting blood', 'are defacing Bill Smith\'s cherry tree', 'are burying Mr. Meola in a shallow grave', 'are counterfeiting Yu-Gi-Oh cards', 'are vivisecting an undocumented day laborer', 'are pounding whole-grain bagels', 'are purchasing high-protein snacks', 'are vandalizing tombstones', 'are dabbling in necromancy', 'are protesting same-sex marriage', 'are worshipping the Sumerian god Enlil', 'are huffing paint thinner', 'are consoling a grief-stricken Nick Damato', 'are locked in mortal combat', 'are smoking 9-volt batteries', 'are spouting hateful and racist screeds', 'are bickering about what to eat for lunch', 'are in police custody', 'are fighting a statutory rape charge', 'are trying to seduce two underage girls', 'are stirring a cauldron of feces', 'are exploring each other\'s bodies', 'are plotting regicide', 'are making the ultimate Coldplay mix', 'are hawking bootleg Mad Catz controllers', 'are studying leechcraft'];    
-		var reasons = ['on Bob\'s terrace.', 'at Todd School.', 'in the Mt. Kisco Target.', 'at the Pleasantville Diner.', 'in SAS5.', 'at the Eddie Stevens Bus Loading Area.', 'on Buckhout Road.', 'at the Thornwood McDonald\'s.', 'somewhere in Rosecliff.', 'in a filthy, urine-soaked yurt.', 'in a Louisiana sewage plant.', 'at MicroCenter.', 'on Larch Road.', 'in the Jagielski basement.', 'on live television.', 'somewhere in rural Pennsylvania.', 'at Williams College.', 'at Carleton College.', 'at the Pinewood Derby.', 'in a cement bunker.', 'in a mirror universe.', 'at the Boston Aquarium.', 'on the Murdock\'s trampoline.', 'at Club Fit.', 'at Wampus Pond.', 'at the Ramada Inn in Yonkers.', 'in Mr. Jagielski\'s green minivan.', 'on Tuttle Road.'];    
-		//shuffle through contents of each array, picking one entry per array
-		var randNoun = nouns[Math.floor(Math.random() * nouns.length)];
-		var randName = names[Math.floor(Math.random() * names.length)];
-		var randClause = clauses[Math.floor(Math.random() * clauses.length)];
-		var randScandal = scandals[Math.floor(Math.random() * scandals.length)];
-		var randReason = reasons[Math.floor(Math.random() * reasons.length)];
-		//place the random entry into the appropriate place in the HTML
-		jQuery("h5").html("");
-		jQuery("h5").append(randNoun + "&nbsp;");
-		jQuery("h5").append(randClause + "&nbsp;");
-		jQuery("h5").append(randName + "&nbsp;");
-		jQuery("h5").append(randScandal + "&nbsp;");
-		jQuery("h5").append(randReason);
-	}
- </script>
-</body>
+			//declare arrays
+			var nouns = ['Bob', 'Dock', 'JJ', 'Label', 'Mambo', 'Vec', 'X', 'Beach', 'Dajeeney', 'DAVE', 'Impulse', 'PDoc', 'The Cock']; 
+			var clauses = ['can\'t attend BobbyFest because he and'];
+			var names = ['Mr. DeCurtis', 
+			'Stephan Guisti', 
+			'Kyle Jasper', 'Josh Gordon', 'Mr. Melito', 'Andy Rooks', 'Nema', 'Richie Lesser', 'Kyle Corbitt', 'Atif', 'Mr. Rooks', 'Cousin Michael', 'Beau Snarr', 'Greg Ozello', 'Jen Axelrod', 'Hannah Berkman', 'Tomomi Sakai', 'Phil Epstein', 'a rapidly deteriorating clone of Bill Smith', 'a hologram of Matt Spaiser', 'David Murdock', 'the severed head of Mr. Courtney', 'the original four members of Ject', 'Lloyd Slackman', 'the Colby baseball team', 'Baron Sengir', 'the Siebert brothers', 'Brian Goldstein', 'Chip Wagner', 'Chunga', 'Craig Praeger', 'Cousin Drew', 'Dan Marcel', 'Dr. Saar', 'Drew Beebee', 'Gena Serati', 'Genc', 'Graveyard Mike', 'the ex-drummer of Blackest', 'Harry Effron', 'Henrik', 'Howie Schulsky', 'Jess Morse', 'John Sillings', 'Karthik', 'Jopling', 'Jomo', 'Logan Mallet', 'Mark Sergenian', 'Matt Goldman', 'Mike Zeola', 'Nate Dogg', 'Officer Tartaglione', 'Dave Ranno', 'Ms. Cotnoir', 'Brendan Reilly', 'Dean Murdock', 'Elsie Smith', 'an actor playing Jeff Chou', 'a troupe of merry bards', 'Kimbo', 'a horribly-burned Mario Marotta', 'a despondent Mike Waxenberg', 'the malevolent spirit of King Yagello VII', 'a shapeshifter', 'Atif\'s high school girlfriend', 'Tommy Leibacher', 'a level 87 pyromancer', 'the ghosts of Davis, Polk and Wardwell', 'a Papa John\'s delivery man', 'the No Name Charlies', 'Steve Pinn', 'one of Bob\'s many spurned college lovers' , 'Mr. Chervin', 'Mr. Rappafeld'];   
+			var scandals = ['summoned an ancient Babylonian demon', 'murdered an immigrant', 'made a blood pact with Baal', 'reanimated a corpse', 'got drunk on rubbing alcohol', 'contracted dysentary', 'angered a mob of Egyptian immigrants', 'slowly suffocated', 'are opening a PF Changs franchise', 'are doing D2 speed runs', 'sucked off a rabid tapir', 'are selling Bonobos pants', 'are vomitting shit and shitting blood', 'are defacing Bill Smith\'s cherry tree', 'are burying Mr. Meola in a shallow grave', 'are counterfeiting Yu-Gi-Oh cards', 'are vivisecting an undocumented day laborer', 'are pounding whole-grain bagels', 'are purchasing high-protein snacks from nuts.com', 'are vandalizing tombstones', 'are dabbling in necromancy', 'are protesting same-sex marriage', 'are worshipping the Sumerian god Enlil', 'are huffing paint thinner', 'are consoling a grief-stricken Nick Damato', 'are locked in mortal combat', 'are smoking 9-volt batteries', 'are spouting hateful and racist screeds', 'are bickering about what to eat for lunch', 'are in police custody', 'are fighting a statutory rape charge', 'are trying to seduce two underage girls', 'are stirring a cauldron of feces', 'are exploring each other\'s bodies', 'are plotting regicide', 'are making the ultimate Coldplay mix', 'are hawking bootleg Mad Catz controllers', 'are studying leechcraft', 'are streaming a "Seventh Heaven" marathon', 'are anxiously awaiting the results of a Hepatitis C test', 'are enrolling in an "Optimize Your LinkedIn Profile" seminar', 'are dining and dashing at a Chinese Buffet', 'are downloading the seminal Third Eye Blind album "Blue"', 'are assembling a Dispatch cover band', 'are writing the next great Bildungsroman', 'are debating the merits of Trello as a project mangagement tool', 'are launching a boutique digital marketing agency', 'are taking the SATs for some high school juniors', 'are eating Pop\'ems', 'are inflating their salaries at a cocktail party', 'are clubbing a rickshaw driver to death', 'are begging their dermatologist for a prescription acne treatment', 'are mixing Merlot and Tylenol PM', 'are contracting MRSA', 'are updating their PureVolume profiles', 'are trying to stack Bed, Bath & Beyond coupons', 'are barely able to look themselves in the mirror these days', 'are sipping RC Cola', 'are flirting with 40-something divorcees', 'are teaching a class titled "Learn SEO in Four Hours"', 'are trying to get MailChimp to sponsor their podcast', 'fell through a trapdoor and broke their ankles', 'are playing AirSoft', 'are looking for Christian singles', 'are eating rancid bologna', 'are creating Hotmail email addresses', 'are forging broadswords'];    
+			var reasons = ['on Bob\'s terrace.', 'at Todd School.', 'in the Mt. Kisco Target.', 'at the Pleasantville Diner.', 'in SAS5.', 'at the Eddie Stevens Bus Loading Area.', 'on Buckhout Road.', 'at the Thornwood McDonald\'s.', 'somewhere in Rosecliff.', 'in a filthy, urine-soaked yurt.', 'in an Indiana sewage plant.', 'at MicroCenter.', 'on Larch Road.', 'in the Jagielski basement.', 'on live television.', 'somewhere in rural Pennsylvania.', 'at Williams College.', 'at Carleton College.', 'at the Pinewood Derby.', 'in a cement bunker.', 'in a mirror universe.', 'at the Boston Aquarium.', 'on the Murdock\'s trampoline.', 'at Club Fit.', 'at Wampus Pond.', 'at the Ramada Inn in Yonkers.', 'in Mr. Jagielski\'s green minivan.', 'on Tuttle Road.', 'in the front row of a Goo Goo Dolls concert.', 'in the backseat of Jon\'s old Saab.', 'on the Deptro North.', 'on the Taconic Parkway.', 'at Rocky\'s Millwood Deli.', 'in the Smoking Room.', 'at a Blink Fitness.', 'at the ustwo offices.', 'in the year 842 AD.', 'at Wizarding World of Harry Potter™.', 'in the bathroom of an IHOP.'];    
+			//shuffle through contents of each array, picking one entry per array
+			var randNoun = nouns[Math.floor(Math.random() * nouns.length)];
+			var randName = names[Math.floor(Math.random() * names.length)];
+			var randClause = clauses[Math.floor(Math.random() * clauses.length)];
+			var randScandal = scandals[Math.floor(Math.random() * scandals.length)];
+			var randReason = reasons[Math.floor(Math.random() * reasons.length)];
+			//place the random entry into the appropriate place in the HTML
+			jQuery("h5").html("");
+			jQuery("h5").append(randNoun + "&nbsp;");
+			jQuery("h5").append(randClause + "&nbsp;");
+			jQuery("h5").append(randName + "&nbsp;");
+			jQuery("h5").append(randScandal + "&nbsp;");
+			jQuery("h5").append(randReason);
+			}
+ 		</script>
 
+ 		<br>
+ 		<br>
+ 		<br>
+ 		<br>
+
+	
+ 		<div class="final">
+	 		<p><i>Criterion Collection: <a href="https://drive.google.com/file/d/0B_SQBH8wF8eUNzhRU0c3QUk1M1E/view?usp=sharing">Imposter</a> // <a href="https://drive.google.com/file/d/0B_SQBH8wF8eUMTZteHVxMWFDakk/view?usp=sharing">π</a> // <a href="https://drive.google.com/open?id=0B_SQBH8wF8eUSHFYcTdaOEdWdzQ">Dojo</a> // <a href="https://drive.google.com/open?id=0B_SQBH8wF8eUSHNXNF96NE1EVGM">Demons</a> // <a href="https://drive.google.com/open?id=0B_SQBH8wF8eUVXlCMHBTTjg3X1k">Monster</a> // <a href="https://drive.google.com/file/d/0B_SQBH8wF8eUY05IOEZJZ1VRREk/view?usp=sharing">'The Fellas'</a></i></p>
+ 		</div>
+	</body>
 </html>
